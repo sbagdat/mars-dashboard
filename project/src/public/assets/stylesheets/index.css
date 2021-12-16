@@ -3,17 +3,75 @@
 body {
   display: flex;
   flex-direction: column;
-  font-family: Arial;
+  font-family: Arial, serif;
   min-height: 100vh;
 }
 
 header {
-  /* header styles */
+  font-size: 1.2rem;
+  color: darkorange;
+  text-align: center;
+  margin-bottom: 1rem;
 }
 
 main {
   flex: 1;
   padding: 20px;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.button {
+  padding: 1rem;
+}
+
+.active {
+  background-color: darkgreen;
+  color: white;
+  text-transform: uppercase;
+}
+
+.rover-data {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  justify-content: space-between;
+}
+
+.rover-data-item {
+  width: 100%;
+  background-color: #f5f5f5;
+  color: #333;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+}
+
+.photos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.photo {
+  width: 100%;
+  height: auto;
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 0.5rem;
+  box-shadow: 0 0.1rem 0.1rem rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
 }
 
 footer {
@@ -23,6 +81,13 @@ footer {
 /* -------------------  TABLET  --------------------- */
 @media (min-width: 768px) {
   /* use mobile */
+  .rover-data {
+    flex-direction: row;
+  }
+
+  .photos {
+    flex-direction: row;
+  }
 }
 
 /* -------------------  DESKTOP  -------------------- */

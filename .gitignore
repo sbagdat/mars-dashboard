@@ -1,0 +1,4 @@
+/.idea/
+project/node_modules
+project/.env
+.DS_Store
